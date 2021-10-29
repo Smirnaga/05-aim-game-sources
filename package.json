@@ -1,0 +1,25 @@
+{
+  "name": "05-aim-game-sources",
+  "version": "1.0.0",
+  "description": "",
+  "main": "aimGame.js",
+  "homepage": "https://Smirnaga.github.io/05-aim-game-sources",
+
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Smirnaga/05-aim-game-sources.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Smirnaga/05-aim-game-sources/issues"
+  },
+  "homepage": "https://github.com/Smirnaga/05-aim-game-sources#readme",
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
