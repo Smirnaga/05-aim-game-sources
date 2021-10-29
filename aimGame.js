@@ -1,7 +1,6 @@
 'use strict';
 
 const startBtn = document.querySelector('#start')
-const refreshBtn = document.querySelector('#refresh')
 const screens = document.querySelectorAll('.screen')
 const timeList = document.querySelector('#time-list')
 const timeEl = document.querySelector('#time')
