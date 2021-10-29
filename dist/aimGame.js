@@ -1,6 +1,7 @@
 'use strict';
 
 const startBtn = document.querySelector('#start')
+const refreshBtn = document.querySelector('#refresh')
 const screens = document.querySelectorAll('.screen')
 const timeList = document.querySelector('#time-list')
 const timeEl = document.querySelector('#time')
@@ -13,6 +14,8 @@ startBtn.addEventListener('click', (event) => {
     event.preventDefault()
     screens[0].classList.add('up')
 })
+
+
 
 timeList.addEventListener('click', (event) => {
     if(event.target.classList.contains ('time-btn')) {
@@ -57,7 +60,8 @@ function setTime(value) {
 
 function finishGame() {
     timeEl.parentNode.remove()
-    board.innerHTML = `<h1>Ваш счет : <span class='primary'>${score}</span> </h1>`
+    board.innerHTML = `<h1>Ваш счет : <span class='primary'>${score}<a href="#" value="Refresh Page" onClick="window.location.reload();" class="refresh" id="refresh">Начать снова</a></span> </h1>
+    `
 }
 
 function createRandomCircle() {
@@ -89,3 +93,4 @@ function setColor(element) {
 function getRandomColor() {
     return colors[Math.floor(Math.random() * colors.length)]
 }
+
